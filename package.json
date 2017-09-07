@@ -1,0 +1,7 @@
+{
+  "name": "hexo-deployer",
+  "version": "1.0.0",
+  "description": "clone and replace deployer of hexo blog",
+  "main": "deploy.js",
+  "license": "MIT"
+}
