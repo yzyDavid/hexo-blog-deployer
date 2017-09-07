@@ -2,6 +2,7 @@
 
 # clone and replace script.
 # need to run with permission controlling web directory. 
+# need yarn installed.
 
 repo_url="https://github.com/yzyDavid/blog.yuzhenyun.me.git"
 deploy_dir="/var/www/hexoblog"
@@ -20,6 +21,8 @@ fi
 echo "generating static files"
 cd $repo_name
 echo "working directory: $(pwd)"
+yarn add -D hexo
+yarn install
 hexo g
 if [ $? -eq 0 ]; then
     echo "generation finished"
